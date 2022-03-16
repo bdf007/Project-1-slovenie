@@ -26,12 +26,13 @@ header img {
     width: auto;
 }
 
-nav,
+
+/* nav,
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 nav a {
     justify-content: center;
