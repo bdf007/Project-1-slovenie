@@ -5,7 +5,8 @@
     width: 100%;
 }
 
-nav {
+nav,
+h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,9 +26,9 @@ nav a {
 }
 
 .imageCult1 {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 80%;
+    height: 20rem;
+    object-fit: contain;
     background-image: url("/image/baniere_1920.png");
     background-repeat: no-repeat;
     animation-name: imagechange;
