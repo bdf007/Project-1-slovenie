@@ -6,6 +6,10 @@
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/forme" title="forme icônes">Forme icônes créées par Freepik - Flaticon</a>*/
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/durabilite" title="durabilité icônes">Durabilité icônes créées par BomSymbols - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/faire-defiler" title="faire défiler icônes">Faire défiler icônes créées par Freepik - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/evolution" title="évolution icônes">Évolution icônes créées par Freepik - Flaticon</a>*/
+
 
 /********** VARIABLE RACINE ***************/
 :root {
@@ -75,7 +79,10 @@ nav ul {
 nav ul li {
     margin-right: 20px;
     font-size: 3em;
+
 }
+
+
 
 /**********PRINCIPAL*********************/
 
@@ -99,7 +106,6 @@ h1::first-letter{
     font-size: 2em;
     color:var(--secondcolor);
 }
-
 
 .premiertrait {
     background-color: var(--thirdcolor);
