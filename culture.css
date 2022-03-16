@@ -16,6 +16,11 @@ nav a {
     justify-content: center;
 }
 
+footer {
+    justify-content: center;
+    text-align: center;
+}
+
 .article {
     display: flex;
     justify-content: center;
