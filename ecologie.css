@@ -1,0 +1,75 @@
+
+
+
+
+box-sizing {
+    border: 0;
+}
+    body{  background-color: antiquewhite;}
+    
+    
+    
+    header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2018/06/13093122/Triglav-National-Park-870x400.jpg);
+    width:  100%;
+    height: 250px;
+    margin: 0;
+   
+}
+h1 {color: rgb(184, 209, 174);
+    width: 500px;}
+
+
+nav { background-color: rgb(184, 209, 174);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 3px, black, solid;
+    }
+
+nav ul {display: flex;
+    flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    padding-top: 2em;
+    margin: 0;
+    padding-bottom: 2em;
+    
+    
+    
+    }
+
+
+nav ul { list-style: none;}
+
+main { margin: 23%;
+    line-height: 2;}
+
+main h2 {margin-bottom: 3em;}
+
+div img { width: 350px;
+        height: 350px;
+        margin-left: 17em;
+        margin-bottom: 8em;
+        margin-top: 2em;
+        filter: drop-shadow(20px 10px 4px #929b45);
+        -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+     
+        }
+        div:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+        footer {background-color: rgba(184, 209, 174);
+                height: 4em;
+                position: fixed; }
+
+        
+                
