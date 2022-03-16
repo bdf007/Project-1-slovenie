@@ -140,3 +140,59 @@ footer {
         background-image: url("/image/lac.jpg");
     }
 }
+
+
+/*déclaration d'attributs pour le formulaire et ses enfants*/
+
+form {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: white;
+    border-style: double;
+    border-color: white;
+    border-width: 0.21em;
+    border-radius: 1em;
+}
+
+form.formulaire {
+    margin-top: 150PX;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.formulaire {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+label,
+input,
+select {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+    width: 45vw;
+}
+
+.longueur {
+    width: 50vw;
+    height: 40px;
+}
+
+.bouton {
+    border: 2px;
+    border-style: dotted;
+    border-radius: 45;
+    border-color: red;
+    margin: 30px;
+    font-size: larger;
+    color: var(--fourthcolor);
+}
