@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page de contact</title>
+    <link rel="stylesheet" href="histo.css" type="text/css"/>
+</head>
+
+<body class="body_contact">
+    <header>
+        <img src="/image/baniere640.jpg" alt="">
+        <div>
+            <nav>
+                <a href="#home"><img src="image/iconeAcceuil.png" alt="home" class="icone"></a>
+                <a href="culuture.html"><img src="/image/iconeCulture.png" alt="retour-menu" class="icone"></a>
+                <a href=""><img src="/image/iconeHistoire.png" alt="icone histoire" class="icone"></a>
+                <a href=""><img src="/image/iconeEcologie.png" alt="icone ecolo" class="icone"></a>
+                <a href="contact.html"><img src="/image/iconeContact.png" alt="icone contact" class="icone"></a>
+            </nav>
+        </div>
+    </header>
+
+    <div>
+
+        <h1>Formulaire de contact</h1>
+
+        <form action="" method="get" class="formulaire">
+            <div class="formulaire">
+                <label for="name">Nom: </label>
+                <input class="longueur" type="text" name="name" id="name" required>
+            </div>
+            <div class="formulaire">
+                <label for="lastname">Prénom: </label>
+                <input class="longueur" type="text" name="name" id="name" required>
+            </div>
+            <div class="formulaire">
+                <label for="email">Email: </label>
+                <input class="longueur" type="email" name="email" id="email" required>
+            </div>
+            <div class="formulaire">
+                <label for="objet">Objet:</label>
+                <select class="longueur" name="Objet">
+                <option value="renseignement" >demande de renseignement</option>
+                <option value="contact">demande de contact</option>
+                <option value="confidentiel">confidentiel</option>    
+                <option value="autre sujet">autre sujet</option>    
+            </select>
+            </div>
+            <div class="formulaire">
+                <label for="message">Message:</label>
+                <textarea name="commentaires" class="longueur"></textarea>
+            </div>
+
+            <input type="submit" class="bouton" value="Envoyer">
+            <a href="culuture.html">retour acceuil </a>
+
+        </form>
+
+
+        <footer>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

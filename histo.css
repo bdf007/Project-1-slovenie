@@ -3,7 +3,9 @@
 /*Photo de ArtHouse Studio provenant de Pexels*/
 /*<a href="https://www.flaticon.com/free-icons/sport-team" title="sport team icons">Sport team icons created by Smashicons - Flaticon</a>*/
 /*Smashicons - team icone */
-
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/forme" title="forme icônes">Forme icônes créées par Freepik - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
 
 /********** VARIABLE RACINE ***************/
 :root {
@@ -11,6 +13,7 @@
     --secondcolor:#788402;
     --thirdcolor:#FEAA00;
     --fourthcolor:#342628;
+    --fithcolor:#2D4B2B;
   }
 
   html{
@@ -58,9 +61,7 @@ header {
 }
 
 nav {
-     /* background: linear-gradient(var(--marron),var(--olive)); */
-     background: linear-gradient(var(--fourthcolor),#2D4B2B);
-    /* background-color: #788402; */
+     background: linear-gradient(var(--fourthcolor), var(--fithcolor));
     height: 100px;
 }
 
@@ -131,18 +132,62 @@ main p::first-letter {
     margin-right: 1.5em;
 }
 
-.imgChateau, .imgindependance, .imgChateau2 {
-    width: 80%;
-    height:100px;
-    border-radius:0.5em;
+
+/************************ ajout code Christophe date: 16/03/2022**************************/
+.imageHisto1 {
+    width: 100%;
+    height: 20rem;
+    /* border-radius: 5%; */
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    animation-name: imagechange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation-name: imagechange;
+    -webkit-animation-duration: 15s;
 }
+
+@keyframes imagechange {
+    0% {
+        background-image: url("/image-histo/ljubljana-g747cbd2cb_640.jpg");
+    }
+    30% {
+        background-image: url("/image-histo/architecture-g44d619e7d_640.jpg");
+    }
+    60% {
+        background-image: url("/image-histo/piran-g3718ad2f4_640.jpg");
+    }
+    100% {
+        background-image: url("/image-histo/slovenia-g1cd53262a_640.jpg");
+    }
+}
+
+@-webkit-keyframes imagechange {
+    0% {
+        background-image: url("/image-histo/ljubljana-g747cbd2cb_640.jpg");
+    }
+    30% {
+        background-image: url("/image-histo/architecture-g44d619e7d_640.jpg");
+    }
+    60% {
+        background-image: url("/image-histo/piran-g3718ad2f4_640.jpg");
+    }
+    100% {
+        background-image: url("/image-histo/slovenia-g1cd53262a_640.jpg");
+    }
+}
+
+/****************fin code Chrisophe********************************/
+
+
 
 
 footer{
     display: flex;
     width: 100%;
     height: 80px;
-    background: linear-gradient(var(--secondcolor),var(--fourthcolor));
+    background: linear-gradient(var(--fithcolor), var(--fourthcolor));
 }
 
 .imgteam {
@@ -157,4 +202,5 @@ footer p {
     font-size: 1em;
     margin: auto 0;
     margin-left: 10px;
+    color: var(--thirdcolor);
 }
