@@ -1,8 +1,12 @@
 * {
-    background-color: antiquewhite;
+    background: linear-gradient(antiquewhite, wheat);
     box-sizing: border-box;
     margin: 0;
     width: 100%;
+}
+
+header img {
+    height: 10rem;
 }
 
 nav,
@@ -14,6 +18,7 @@ h1 {
 
 nav a {
     justify-content: center;
+    text-align: center;
 }
 
 footer {
@@ -31,38 +36,42 @@ footer {
 }
 
 .imageCult1 {
-    width: 80%;
+    width: 100%;
     height: 20rem;
-    object-fit: contain;
-    background-image: url("/image/baniere_1920.png");
+    border-radius: 5%;
     background-repeat: no-repeat;
+    object-fit: scale-down;
     animation-name: imagechange;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     -webkit-animation-name: imagechange;
     -webkit-animation-duration: 10s;
 }
 
 @keyframes imagechange {
     0% {
-        background-image: url("/image/nature_1280.jpg");
+        background-image: url("/image/bateau.jpg");
     }
-    50% {
-        background-image: url("/image/slovenia1280.png");
+    30% {
+        background-image: url("/image/chapelle.jpg");
+    }
+    60% {
+        background-image: url("/image/place.jpg");
     }
     100% {
-        background-image: url("/image/slovenia_1920.png");
+        background-image: url("/image/postovna.jpg");
     }
 }
 
 @-webkit-keyframes imagechange {
     0% {
-        background-image: url("/image/nature_1280.jpg");
+        background-image: url("/image/bateau.jpg");
     }
     50% {
-        background-image: url("/image/slovenia1280.png");
+        background-image: url("/image/place.jpg");
     }
     100% {
-        background-image: url("/image/slovenia_1920.png");
+        background-image: url("/image/postovna.jpg");
     }
 }
