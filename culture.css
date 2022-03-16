@@ -5,8 +5,25 @@
     width: 100%;
 }
 
+:root {
+    --firstcolor: #F7F4EF;
+    --secondcolor: #788402;
+    --thirdcolor: #FEAA00;
+    --fourthcolor: #342628;
+}
+
+.titreDePage::first-letter {
+    color: red;
+    font-size: 2em;
+}
+
 header img {
     height: 10rem;
+}
+
+.icone {
+    height: 2rem;
+    width: auto;
 }
 
 nav,
@@ -41,17 +58,17 @@ footer {
     border-radius: 5%;
     background-repeat: no-repeat;
     object-fit: scale-down;
-    animation-name: imagechange;
+    animation-name: imagechangecult1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange;
+    -webkit-animation-name: imagechangecult1;
     -webkit-animation-duration: 10s;
 }
 
-@keyframes imagechange {
+@keyframes imagechangecult1 {
     0% {
-        background-image: url("/image/bateau.jpg");
+        background-image: url("/image/postovna.jpg");
     }
     30% {
         background-image: url("/image/chapelle.jpg");
@@ -64,14 +81,62 @@ footer {
     }
 }
 
-@-webkit-keyframes imagechange {
+@-webkit-keyframes imagechangecult1 {
     0% {
-        background-image: url("/image/bateau.jpg");
+        background-image: url("/image/postovna.jpg");
     }
-    50% {
+    30% {
+        background-image: url("/image/chapelle.jpg");
+    }
+    60% {
         background-image: url("/image/place.jpg");
     }
     100% {
         background-image: url("/image/postovna.jpg");
+    }
+}
+
+.imageCult2 {
+    width: 100%;
+    height: 20rem;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    object-fit: scale-down;
+    animation-name: imagechangecult2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.445);
+    -webkit-animation-name: imagechangecult2;
+    -webkit-animation-duration: 10s;
+}
+
+@keyframes imagechangecult2 {
+    0% {
+        background-image: url("/image/lac.jpg");
+    }
+    50% {
+        background-image: url("/image/lakeboat.jpg");
+    }
+    80% {
+        background-image: url("/image/scuba.jpg");
+    }
+    100% {
+        background-image: url("/image/lac.jpg");
+    }
+}
+
+@-webkit-keyframes imagechangecult2 {
+    0% {
+        background-image: url("/image/lac.jpg");
+    }
+    50% {
+        background-image: url("/image/lakeboat.jpg");
+    }
+    80% {
+        background-image: url("/image/scuba.jpg");
+    }
+    100% {
+        background-image: url("/image/lac.jpg");
     }
 }
