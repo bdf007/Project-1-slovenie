@@ -1,0 +1,62 @@
+* {
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    justify-content: center;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.imageCult1 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-image: url("/image/baniere_1920.png");
+    background-repeat: no-repeat;
+    animation-name: imagechange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: imagechange;
+    -webkit-animation-duration: 10s;
+}
+
+@keyframes imagechange {
+    0% {
+        background-image: url("/image/nature_1280.jpg");
+    }
+    50% {
+        background-image: url("/image/slovenia1280.png");
+    }
+    100% {
+        background-image: url("/image/slovenia_1920.png");
+    }
+}
+
+@-webkit-keyframes imagechange {
+    0% {
+        background-image: url("/image/nature_1280.jpg");
+    }
+    50% {
+        background-image: url("/image/slovenia1280.png");
+    }
+    100% {
+        background-image: url("/image/slovenia_1920.png");
+    }
+}
