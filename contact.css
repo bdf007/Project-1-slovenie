@@ -1,0 +1,99 @@
+/********** VARIABLE RACINE ***************/
+:root {
+    --firstcolor: #F7F4EF;
+    --secondcolor:#788402;
+    --thirdcolor:#FEAA00;
+    --fourthcolor:#342628;
+    --fithcolor:#2D4B2B;
+  }
+
+  html{
+    scroll-behavior: smooth;
+    
+}
+
+/********* RESET *************/
+body{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #F7F4EF;
+    /*width: 1100px; */
+}
+
+li{
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+
+/******* NAVIGATION ******************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+}
+
+.banniere {
+    background-size:cover;
+    height: 200px;
+}
+
+nav {
+     background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    height: 100px;
+}
+
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    /* margin: 10px */
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 3em;
+
+}
+
+/**************************FORMULAIRE DE CONTACT*************************/
+main {
+    background-color: #788402;
+}
+
+
+/*************************FOOTER*****************/
+footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(var(--fithcolor), var(--fourthcolor));
+}
+
+.imgteam {
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+
+}
+
+footer p {
+    font-size: 1em;
+    margin: auto 0;
+    margin-left: 10px;
+    color: var(--thirdcolor);
+}
