@@ -1,11 +1,4 @@
-:root {
-    --firstcolor: #F7F4EF;
-    --secondcolor:#788402;
-    --thirdcolor:#FEAA00;
-    --fourthcolor:#342628;
-  }
-
-  * {
+* {
     background: linear-gradient(antiquewhite, wheat);
     box-sizing: border-box;
     margin: 0;
@@ -13,18 +6,29 @@
 }
 
 
-.banniere {
-    background-size:cover;
-    height: 200px;
+
+:root {
+    --firstcolor: #F7F4EF;
+    --secondcolor:#788402;
+    --thirdcolor:#FEAA00;
+    --fourthcolor:#342628;
+  }
+
+  
+
+
+.icone {
+    height: 2rem;
+    width: auto;
 }
+
 
 nav {display: flex;
     justify-content: center;
     align-items: center;
-      background: linear-gradient(var(--marron),var(--olive)); 
-     background: linear-gradient(var(--fourthcolor),#2D4B2B);
-     background-color: #788402; 
+    background: linear-gradient(var(--fourthcolor), var(--fithcolor));
     height: 100px;
+
 }
 
     
@@ -32,7 +36,7 @@ nav {display: flex;
 
 nav a { justify-content: center;
         text-align: center;
-        
+
 }
 
 
@@ -40,7 +44,7 @@ header img {
     height: 10rem;
 }
 
-h1 {
+.titreDePage {
     text-align: center;
     color: var(--thirdcolor);
     font-weight: bolder;
@@ -50,7 +54,7 @@ h1 {
     width: 273px;
 }
 
-h1::first-letter{
+.titreDePage::first-letter {
     font-size: 2em;
     color:var(--secondcolor);
 }
@@ -76,38 +80,38 @@ footer {
     border-radius: 5%;
     background-repeat: no-repeat;
     object-fit: scale-down;
-    animation-name: imagechange;
+    animation-name: imagechange1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange;
+    -webkit-animation-name: imagechange1;
     -webkit-animation-duration: 10s;
 }
 
-@keyframes imagechange {
+@keyframes imagechange1 {
     0% {
-        background-image: url("");
+        background-image: url("images/mobile/ours.jpg");
     }
     30% {
-        background-image: url("");
+        background-image: url("images/mobile/abeilles.jpg");
     }
     60% {
-        background-image: url("");
+        background-image: url("images/mobile/ours.jpg");
     }
     100% {
-        background-image: url("");
+        background-image: url("images/mobile/abeilles.jpg");
     }
 }
 
 @-webkit-keyframes imagechange {
     0% {
-        background-image: url("");
+        background-image: url("images/mobile/ours.jpg");
     }
     50% {
-        background-image: url("");
+        background-image: url("images/mobile/abeilles.jpg");
     }
     100% {
-        background-image: url("");
+        background-image: url("images/mobile/ours.jpg");
     }
 }
 
@@ -118,16 +122,29 @@ footer {
     border-radius: 5%;
     background-repeat: no-repeat;
     object-fit: scale-down;
-    animation-name: imagechange;
+    animation-name: imagechange2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange;
+    -webkit-animation-name: imagechange2;
     -webkit-animation-duration: 10s;
 
 }
     
-   
+@keyframes imagechange2 {
+    0% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+}
 
         
 
@@ -137,10 +154,26 @@ footer {
         border-radius: 5%;
         background-repeat: no-repeat;
         object-fit: scale-down;
-        animation-name: imagechange;
+        animation-name: imagechange3;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-        -webkit-animation-name: imagechange;
+        -webkit-animation-name: imagechange3;
         -webkit-animation-duration: 10s;
  }
+
+
+@keyframes imagechange3 {
+    0% {
+        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
+    }
+}
