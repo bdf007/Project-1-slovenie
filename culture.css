@@ -26,13 +26,12 @@ header img {
     width: auto;
 }
 
-
-/* nav,
+nav,
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 nav a {
     justify-content: center;
@@ -145,7 +144,8 @@ footer {
 
 /*déclaration d'attributs pour le formulaire et ses enfants*/
 
-form {
+
+/* form {
     font-size: 0.9rem;
     font-weight: bolder;
     color: white;
@@ -186,7 +186,7 @@ label {
 .longueur {
     width: 50vw;
     height: 40px;
-}
+} */
 
 .bouton {
     border: 2px;
