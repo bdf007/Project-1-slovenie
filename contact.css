@@ -71,9 +71,55 @@ nav ul li {
 
 /**************************FORMULAIRE DE CONTACT*************************/
 main {
-    background-color: #788402;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color:var(--firstcolor);
+    margin-top: 320px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 485px;
+    /* background-image: url("image-histo/eau.jpg"); */
 }
 
+main h1 {
+    margin-top: 40px;
+}
+
+main .formulaire {
+    display: block;
+    text-align:left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 30px;;
+    width: 100%;
+}
+
+
+.buton {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.bouton {
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color:#342628;
+    color:#FEAA00;
+}
+
+.buton a img {
+    border-radius: 10px;
+    background-color:#342628;
+    padding: 7px;
+    padding-bottom: 8px;
+    margin-left: 20px
+}
 
 /*************************FOOTER*****************/
 footer{
@@ -96,4 +142,5 @@ footer p {
     margin: auto 0;
     margin-left: 10px;
     color: var(--thirdcolor);
+    width: 100%;
 }
