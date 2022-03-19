@@ -1,3 +1,5 @@
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/email" title="email icônes">Email icônes créées par Bartama Graphic - Flaticon</a>*/
+
 /********** VARIABLE RACINE ***************/
 :root {
     --firstcolor: #F7F4EF;
@@ -78,32 +80,116 @@ main {
     margin-top: 320px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 485px;
+    height: 550px;
     /* background-image: url("image-histo/eau.jpg"); */
 }
 
-main h1 {
-    margin-top: 40px;
-}
+
 
 main .formulaire {
-    display: block;
-    text-align:left;
+    display: inline-block;
+    /* justify-content:center; */
+    text-align:justify;
     margin-top: 20px;
     margin-bottom: 30px;
     height: 30px;;
     width: 100%;
 }
 
+/*fieldset*/
 
+fieldset {
+    border-radius: 3px;
+    border-top: 2px solid var(--thirdcolor);
+    border-left:2px solid var(--thirdcolor);
+    border-bottom: 2px solid var(--secondcolor);
+    border-right: 1px solid var(--fithcolor);
+    
+}
+
+/*Legend*/
+legend {
+    font-weight: bold;
+    font-size: 1.7em;
+    color:var(--fithcolor);
+}
+
+legend::first-letter {
+    color:var(--thirdcolor);
+}
+
+legend:nth-child(2) {
+    color:var(--thirdcolor);
+}
+
+legend span {
+    text-transform: capitalize;
+    color: var(--thirdcolor);
+}
+
+/*Labels*/
+
+label {
+    color:var(--thirdcolor);
+    
+}
+
+/*input*/
+input {
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    width: 75%;
+}
+
+input[type=text]:focus {
+    background-color:var(--thirdcolor);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=email]:focus {
+    background-color:var(--thirdcolor);
+    transition: 0.5s;
+    
+}  
+
+
+/*objet*/
+.longueur {
+    width: 75%;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+}
+
+.longueur:focus {
+    background-color:var(--thirdcolor);
+    transition: 0.5s;
+}
+
+
+/*textaera*/
+textarea {
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    width: 80%;
+}
+
+textarea:focus {
+    background-color:var(--thirdcolor);
+    transition: 0.5s;
+} 
+
+
+/*button*/
 .buton {
     display:flex;
     justify-content: space-around;
     align-items: center;
-    
+    width: 100%;
 }
 .bouton {
-    margin-left: 50%;
+    /* margin-left: 50%; */
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     padding:10px;
@@ -111,6 +197,7 @@ main .formulaire {
     border-radius: 10px;
     background-color:#342628;
     color:#FEAA00;
+    cursor: pointer;
 }
 
 .buton a img {
@@ -120,6 +207,9 @@ main .formulaire {
     padding-bottom: 8px;
     margin-left: 20px
 }
+
+
+
 
 /*************************FOOTER*****************/
 footer{

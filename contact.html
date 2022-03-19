@@ -27,39 +27,42 @@
     </header>
 
    <main>
-        <h1>Formulaire de contact</h1>
-        <form action="" method="get" class="formulaires">
-            <div class="formulaire">
-                <label for="name">Nom: </label>
-                <input class="longueur" type="text" name="name" id="name" required>
-            </div>
-            <div class="formulaire">
-                <label for="lastname">Prénom: </label>
-                <input class="longueur" type="text" name="name" id="name" required>
-            </div>
-            <div class="formulaire">
-                <label for="email">Email: </label>
-                <input class="longueur" type="email" name="email" id="email" required>
-            </div>
-            <div class="formulaire">
-                <label for="objet">Objet:</label>
-                <select class="longueur" name="Objet">
-                <option value="renseignement" >demande de renseignement</option>
-                <option value="contact">demande de contact</option>
-                <option value="confidentiel">confidentiel</option>    
-                <option value="autre sujet">autre sujet</option>    
-            </select>
-            </div>
-            <div class="formulaire">
-                <label for="message">Message:</label>
-                <textarea name="commentaires" class="longueur"></textarea>
-            </div>
-
-            <div class="buton">
-                <input type="submit" class="bouton" value="Envoyer">
-                <a href="#home"><img src="image-histo/icone/accueil1.png" alt="home" width="24" height="24" class="icone"></a>
-            </div>
-        </form>
+        <!-- <h1>Formulaire de contact</h1> -->
+        <fieldset>
+            <legend>Formulaire de <span>C</span>ontact</legend>
+            <form action="" method="get" class="formulaires">
+                <div class="formulaire">
+                    <label for="name">Nom: </label><br>
+                    <input class="longueur" type="text" name="name" placeholder="Doe..." id="name" required>
+                </div>
+                <div class="formulaire">
+                    <label for="lastname">Prénom: </label><br>
+                    <input class="longueur" type="text" name="name" id="name" placeholder="John..." required>
+                </div>
+                <div class="formulaire">
+                    <label for="email">Email: </label><br>
+                    <input class="longueur" type="email" name="email" placeholder="jx.rodo@gjo.com " id="email" required>
+                </div>
+                <div class="formulaire">
+                    <label for="objet">Objet:</label><br>
+                    <select class="longueur" name="Objet">
+                        <option value="renseignement">demande de renseignement</option>
+                        <option value="contact">demande de contact</option>
+                        <option value="confidentiel">confidentiel</option>    
+                        <option value="autre sujet">autre sujet</option>    
+                    </select>
+                </div>
+                <div class="formulaire">
+                    <label for="message">Message:</label><br>
+                    <textarea name="commentaires" placeholder="Ici votre texte à saisir" class="longueur"></textarea>
+                </div>
+        </fieldset>
+                <div class="buton">
+                    <input type="submit" class="bouton" value="Envoyer">
+                    <a href="#home"><img src="image-histo/icone/accueil1.png" alt="home" width="24" height="24" class="icone"></a>
+                </div>
+            </form>
+        
     </main>
 
     <footer>
