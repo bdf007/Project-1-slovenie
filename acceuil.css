@@ -1,0 +1,31 @@
+* {
+   
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+
+}
+html { 
+    background: url(./images/Bled.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+body div{display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 812px;
+   
+    
+    }
+
+a {
+        text-decoration: none;
+    }
+
+.icone { width: 10%;
+        box-shadow: 5%; 
+
+}

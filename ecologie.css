@@ -7,51 +7,108 @@
 
 
 
+
 :root {
     --firstcolor: #F7F4EF;
     --secondcolor:#788402;
     --thirdcolor:#FEAA00;
     --fourthcolor:#342628;
+    --fithcolor:#2D4B2B;
   }
-
   
-
-
-.icone {
-    height: 2rem;
-    width: auto;
-}
-
-
-nav {display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(var(--fourthcolor), var(--fithcolor));
-    height: 100px;
-
-}
-
+  
+  html{
+    scroll-behavior: smooth;
     
+}
 
-
-nav a { justify-content: center;
-        text-align: center;
-
+body{
+   
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #F7F4EF;
+    
 }
 
 
-header img {
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    width: 100%;
+   
+}
+  
+.banniere {
+    background-size:cover;
     height: 10rem;
 }
 
-.titreDePage {
+nav { background-color: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    
+  
+}
+
+
+nav ul {
+   display:flex;
+   align-items: flex-start;
+   flex-direction: row;
+   justify-content: space-around;
+   margin: left 0;
+   padding-left: 0;
+   background-color: linear-gradient(var(--fourthcolor), var(--fithcolor));
+
+}
+
+nav ul li {
+    list-style-type: none;
+   font-size:3em;
+   width: 8%;
+   background-color: linear-gradient(var(--fourthcolor), var(--fithcolor));
+}
+
+
+
+/*header img {
+    height: 10rem;
+}*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13em;
+
+}
+
+
+main p {
+    margin-left: 4em;
+    margin-right: 4em;
+    text-align: center;
+    border-left: 2px solid var(--secondcolor);
+}
+
+main p::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+    color:var(--secondcolor) ;
+}
+
+
+.titreDePage {  
     text-align: center;
     color: var(--thirdcolor);
     font-weight: bolder;
     border-left: 2px solid var(--secondcolor);
-    margin: 2em;
-    margin-left: 62px;
-    width: 273px;
+    margin-left: 2em;
+    /*margin-left: 62px;
+    width: 273px;*/
 }
 
 .titreDePage::first-letter {
@@ -72,7 +129,9 @@ footer {
     flex-direction: column;
     align-content: center;
     text-align: center;
-}
+   
+    }
+
 
 .imageCult1 {
     width: 100%;
@@ -81,11 +140,11 @@ footer {
     background-repeat: no-repeat;
     object-fit: scale-down;
     animation-name: imagechange1;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     -webkit-animation-name: imagechange1;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-duration: 15s;
 }
 
 @keyframes imagechange1 {
@@ -104,16 +163,21 @@ footer {
 }
 
 @-webkit-keyframes imagechange {
-    0% {
+    0%  {
         background-image: url("images/mobile/ours.jpg");
     }
-    50% {
+    30% {
         background-image: url("images/mobile/abeilles.jpg");
     }
-    100% {
+    60% {
         background-image: url("images/mobile/ours.jpg");
     }
+    100% {
+        background-image: url("images/mobile/abeilles.jpg");
+    }
 }
+
+
 
 
 .imageCult2 {
@@ -146,6 +210,20 @@ footer {
     }
 }
 
+@-webkit-keyframes imagechange2 {
+    0% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+}
         
 
  .imageCult3 {
@@ -164,6 +242,21 @@ footer {
 
 
 @keyframes imagechange3 {
+    0% {
+        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
+    }
+}
+
+@-webkit-keyframes imagechange3 {
     0% {
         background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
     }
