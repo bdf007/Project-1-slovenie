@@ -1,0 +1,104 @@
+
+
+
+
+
+* {
+   
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+
+
+}
+html { 
+    background: url(./images/Bled.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    
+    
+    
+    
+  }
+body div{display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 7rem;
+    }
+  
+
+
+.icone { width: 15%;
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        box-shadow: 1px 1px 1px black,
+        inset 2px 3px 5px rgba(0,0,0,0.3),
+        inset -2px -3px 5px rgba(255,255,255,0.5);
+        
+
+}
+
+
+.icone:focus, button:hover {
+    background-image: linear-gradient(to bottom right, #888, #eee);
+  }
+  
+  .icone:active {
+    box-shadow: inset 2px 2px 1px black,
+                inset 2px 3px 5px rgba(0,0,0,0.3),
+                inset -2px -3px 5px rgba(255,255,255,0.5);
+  }
+
+
+  
+#pc { 
+        color: #FEAA00;
+        margin-bottom: 8rem;
+
+}
+#pc::first-letter{
+        color:#788402;
+}
+
+
+
+@media screen and (min-width: 600px) { 
+  
+  * {
+   
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+
+
+}
+html { 
+    background-size: url(./images/Bled.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+  
+  
+  
+  
+  body div{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 7rem;
+  
+  }
+  .icone{
+    width: 50%;
+  }
+}
