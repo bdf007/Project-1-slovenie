@@ -1,34 +1,56 @@
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/bouton-daccueil" title="bouton d'accueil icônes">Bouton d'accueil icônes créées par Freepik - Flaticon</a>*/
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/bouton-retour" title="bouton retour icônes">Bouton retour icônes créées par Catalin Fertu - Flaticon</a>*/
+
+
 /*Photo de ArtHouse Studio provenant de Pexels*/
+
+
 /*<a href="https://www.flaticon.com/free-icons/sport-team" title="sport team icons">Sport team icons created by Smashicons - Flaticon</a>*/
+
+
 /*Smashicons - team icone */
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/forme" title="forme icônes">Forme icônes créées par Freepik - Flaticon</a>*/
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/durabilite" title="durabilité icônes">Durabilité icônes créées par BomSymbols - Flaticon</a>*/
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/faire-defiler" title="faire défiler icônes">Faire défiler icônes créées par Freepik - Flaticon</a>*/
+
+
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/evolution" title="évolution icônes">Évolution icônes créées par Freepik - Flaticon</a>*/
 
 
 /****************************     VARIABLE RACINE    ***************/
+
 :root {
     --firstcolor: #F7F4EF;
-    --secondcolor:#788402;
-    --thirdcolor:#FEAA00;
-    --fourthcolor:#342628;
-    --fithcolor:#2D4B2B;
-  }
-
-  html{
-    scroll-behavior: smooth;
-    
+    --secondcolor: #788402;
+    --thirdcolor: #FEAA00;
+    --fourthcolor: #342628;
+    --fithcolor: #2D4B2B;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /**********************************    RESET     *************/
-body{
+
+body {
     box-sizing: border-box;
-    display:flex;
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0 auto;
@@ -38,14 +60,13 @@ body{
     /*width: 1100px; */
 }
 
-li{
+li {
     list-style-type: none;
 }
 
 li a {
     text-decoration: none;
 }
-
 
 
 /**************************************    NAVIGATION    ******************/
@@ -60,18 +81,17 @@ header {
 }
 
 .banniere {
-    background-size:cover;
+    background-size: cover;
     height: 200px;
 }
 
 nav {
-     background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    background: linear-gradient(var(--fourthcolor), var(--fithcolor));
     height: 100px;
 }
 
-
 nav ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
     /* margin: 10px */
 }
@@ -81,31 +101,42 @@ nav ul li {
     font-size: 3em;
 }
 
+
 /*ajout animation icones - récupérer à Vincent le 23/03/2022*/
 
-.icone { width: 2em;
+.icone {
+    width: 2em;
     height: 2em;
     font-size: 1.1rem;
     line-height: 2;
     border-radius: 10px;
     border: none;
-        box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        box-shadow: 1px 1px 1px black,
-        inset 2px 3px 5px rgba(0,0,0,0.3),
-        inset -2px -3px 5px rgba(255,255,255,0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
+}
 
+.icone:focus,
+button:hover {
+    background-image: linear-gradient(to bottom right, #888, #eee);
+}
+
+.icone:active {
+    box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
 }
 
 
-.icone:focus, button:hover {
-    background-image: linear-gradient(to bottom right, #888, #eee);
-  }
-  
-  .icone:active {
-    box-shadow: inset 2px 2px 1px black,
-                inset 2px 3px 5px rgba(0,0,0,0.3),
-                inset -2px -3px 5px rgba(255,255,255,0.5);
-  }
+/********************** entree ******************/
+
+.entre {
+    display: flex;
+    background-image: url(/image/nature_1280.jpg);
+    background-size: 100%;
+    background-repeat: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 
 /*************************************   PRINCIPAL     *********************/
 
@@ -125,9 +156,9 @@ h1 {
     margin: 2em;
 }
 
-h1::first-letter{
+h1::first-letter {
     font-size: 2em;
-    color:var(--secondcolor);
+    color: var(--secondcolor);
 }
 
 .premiertrait {
@@ -135,7 +166,7 @@ h1::first-letter{
     height: 1px;
     width: 25%;
     margin: -3px auto;
-    text-shadow: 1px 1px 2px var(--thirdcolor);  
+    text-shadow: 1px 1px 2px var(--thirdcolor);
 }
 
 main p {
@@ -148,7 +179,7 @@ main p {
 main p::first-letter {
     font-weight: bold;
     font-size: 2em;
-    color:var(--secondcolor) ;
+    color: var(--secondcolor);
 }
 
 .images {
@@ -163,6 +194,7 @@ main p::first-letter {
 
 
 /************************ ajout code Christophe date: 16/03/2022**************************/
+
 .imageHisto1 {
     width: 100%;
     height: 20rem;
@@ -207,12 +239,190 @@ main p::first-letter {
     }
 }
 
+.imageCult1 {
+    width: 100%;
+    height: 20rem;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    animation-name: imagechangecult1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation-name: imagechangecult1;
+    -webkit-animation-duration: 10s;
+}
+
+@keyframes imagechangecult1 {
+    0% {
+        background-image: url("/image/postovna.jpg");
+    }
+    30% {
+        background-image: url("/image/chapelle.jpg");
+    }
+    60% {
+        background-image: url("/image/place.jpg");
+    }
+    100% {
+        background-image: url("/image/postovna.jpg");
+    }
+}
+
+@-webkit-keyframes imagechangecult1 {
+    0% {
+        background-image: url("/image/postovna.jpg");
+    }
+    30% {
+        background-image: url("/image/chapelle.jpg");
+    }
+    60% {
+        background-image: url("/image/place.jpg");
+    }
+    100% {
+        background-image: url("/image/postovna.jpg");
+    }
+}
+
+.imageCult2 {
+    width: 100%;
+    height: 20rem;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    object-fit: scale-down;
+    animation-name: imagechangecult2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.445);
+    -webkit-animation-name: imagechangecult2;
+    -webkit-animation-duration: 10s;
+}
+
+@keyframes imagechangecult2 {
+    0% {
+        background-image: url("/image/lac.jpg");
+    }
+    50% {
+        background-image: url("/image/lakeboat.jpg");
+    }
+    80% {
+        background-image: url("/image/scuba.jpg");
+    }
+    100% {
+        background-image: url("/image/lac.jpg");
+    }
+}
+
+@-webkit-keyframes imagechangecult2 {
+    0% {
+        background-image: url("/image/lac.jpg");
+    }
+    50% {
+        background-image: url("/image/lakeboat.jpg");
+    }
+    80% {
+        background-image: url("/image/scuba.jpg");
+    }
+    100% {
+        background-image: url("/image/lac.jpg");
+    }
+}
+
+.imageEco1 {
+    width: 97%;
+    height: 20rem;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    animation-name: imagechange1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation-name: imagechange1;
+    -webkit-animation-duration: 15s;
+}
+
+@keyframes imagechange1 {
+    0% {
+        background-image: url("images/mobile/ours.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/abeilles.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/ours.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/abeilles.jpg");
+    }
+}
+
+@-webkit-keyframes imagechange1 {
+    0% {
+        background-image: url("images/mobile/ours.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/abeilles.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/ours.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/abeilles.jpg");
+    }
+}
+
+.imageEco2 {
+    width: 100%;
+    height: 20rem;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    animation-name: imagechange2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation-name: imagechange2;
+    -webkit-animation-duration: 10s;
+}
+
+@keyframes imagechange2 {
+    0% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+}
+
+@-webkit-keyframes imagechange2 {
+    0% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    30% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+    60% {
+        background-image: url("images/mobile/dechets2.jpg");
+    }
+    100% {
+        background-image: url("images/mobile/dechets3.jpg");
+    }
+}
+
+
 /****************fin code Chrisophe********************************/
 
 
 /****************************  FOOTER ******************************/
 
-footer{
+footer {
     display: flex;
     width: 100%;
     height: 80px;
@@ -224,7 +434,6 @@ footer{
     width: 20px;
     height: 20px;
     margin-left: 20px;
-
 }
 
 footer p {

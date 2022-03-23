@@ -1,295 +1,228 @@
-* {
-    background: linear-gradient(antiquewhite, wheat);
-    box-sizing: border-box;
-    margin: 0;
-    width: 100%;
-}
-
-
-
-
-:root {
-    --firstcolor: #F7F4EF;
-    --secondcolor:#788402;
-    --thirdcolor:#FEAA00;
-    --fourthcolor:#342628;
-    --fithcolor:#2D4B2B;
-  }
-  
-  
-  html{
-    scroll-behavior: smooth;
+    * {
+        background: linear-gradient(antiquewhite, wheat);
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+    }
     
-}
-
-body{
-   box-sizing: border-box;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0 auto;
-   width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    background: #F7F4EF;
+     :root {
+        --firstcolor: #F7F4EF;
+        --secondcolor: #788402;
+        --thirdcolor: #FEAA00;
+        --fourthcolor: #342628;
+        --fithcolor: #2D4B2B;
+    }
     
-}
-
-
-header {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: flex-start;
-    width: 100%;
-    height: 230px;
-   
-}
-  
-.banniere {
-    background-size:cover;
-   height : 11rem;
-    width: 100%;
-}
-
-nav { background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        background: #F7F4EF;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        width: 100%;
+        height: 230px;
+    }
+    
+    .banniere {
+        background-size: cover;
+        height: 11rem;
+        width: 100%;
+    }
+    
+    nav {
+        background: linear-gradient(var(--fourthcolor), var(--fithcolor));
         height: 4rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-       padding-left: 2em;
+        padding-left: 2em;
+    }
     
-}
-
-nav a { background:linear-gradient(var(--fourthcolor), var(--fithcolor));  }
-
-
-/*header img {
+    nav a {
+        background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    }
+    /*header img {
     height: 10rem;
 }*/
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     
-
-}
-
-
-main p {
-    margin-top: 1em;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    text-align: center;
-    border-left: 2px solid var(--secondcolor);
-    line-height: 1.5em;
-}
-
-main p::first-letter {
-    font-weight: bold;
-    font-size: 2em;
-    color:var(--secondcolor) ;
-}
-
-
-.titreDePage {  
-    text-align: center;
-    color: var(--thirdcolor);
-    font-weight: bolder;
-    border-left: 2px solid var(--secondcolor);
-    margin-left: 0em;
-    height: 7em;
-    width: 9em;
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
-}
-
-.titreDePage::first-letter {
-    font-size: 2em;
-    color:var(--secondcolor);
-}
-
-h3{
-    background:linear-gradient(var(--fourthcolor), var(--fithcolor));
-    color: linear-gradient(antiquewhite, wheat);
-}
-
-
-footer {
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(var(--fourthcolor), var(--fithcolor));
-}
-
-.article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-   
+    main p {
+        margin-top: 1em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        text-align: center;
+        border-left: 2px solid var(--secondcolor);
+        line-height: 1.5em;
     }
-
-
-.imageCult1 {
-    width: 97%;
-    height: 20rem;
-    border-radius: 5%;
-    background-repeat: no-repeat;
-    object-fit: scale-down;
-    animation-name: imagechange;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange1;
-    -webkit-animation-duration: 15s;
-}
-
-@keyframes imagechange1 {
-    0% {
-        background-image: url("images/mobile/ours.jpg");
-    }
-    30% {
-        background-image: url("images/mobile/abeilles.jpg");
-    }
-    60% {
-        background-image: url("images/mobile/ours.jpg");
-    }
-    100% {
-        background-image: url("images/mobile/abeilles.jpg");
-    }
-}
-
-@-webkit-keyframes imagechange1 {
-    0%  {
-        background-image: url("images/mobile/ours.jpg");
-    }
-    30% {
-        background-image: url("images/mobile/abeilles.jpg");
-    }
-    60% {
-        background-image: url("images/mobile/ours.jpg");
-    }
-    100% {
-        background-image: url("images/mobile/abeilles.jpg");
-    }
-}
-
-
-
-
-.imageCult2 {
-    width: 100%;
-    height: 20rem;
-    border-radius: 5%;
-    background-repeat: no-repeat;
-    object-fit: scale-down;
-    animation-name: imagechange2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange2;
-    -webkit-animation-duration: 10s;
-
-}
     
-@keyframes imagechange2 {
-    0% {
-        background-image: url("images/mobile/dechets2.jpg");
+    main p::first-letter {
+        font-weight: bold;
+        font-size: 2em;
+        color: var(--secondcolor);
     }
-    30% {
-        background-image: url("images/mobile/dechets3.jpg");
+    
+    .titreDePage {
+        text-align: center;
+        color: var(--thirdcolor);
+        font-weight: bolder;
+        border-left: 2px solid var(--secondcolor);
+        margin-left: 0em;
+        height: 7em;
+        width: 9em;
     }
-    60% {
-        background-image: url("images/mobile/dechets2.jpg");
+    
+    .titreDePage::first-letter {
+        font-size: 2em;
+        color: var(--secondcolor);
     }
-    100% {
-        background-image: url("images/mobile/dechets3.jpg");
+    /* h3 {
+        background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+        color: linear-gradient(antiquewhite, wheat);
+    } */
+    
+    footer {
+        justify-content: center;
+        text-align: center;
+        background: linear-gradient(var(--fourthcolor), var(--fithcolor));
     }
-}
-
-@-webkit-keyframes imagechange2 {
-    0% {
-        background-image: url("images/mobile/dechets2.jpg");
+    
+    .article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
     }
-    30% {
-        background-image: url("images/mobile/dechets3.jpg");
+    
+    .imageEco1 {
+        width: 97%;
+        height: 20rem;
+        border-radius: 5%;
+        background-repeat: no-repeat;
+        object-fit: scale-down;
+        animation-name: imagechange1;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        -webkit-animation-name: imagechange1;
+        -webkit-animation-duration: 15s;
     }
-    60% {
-        background-image: url("images/mobile/dechets2.jpg");
+    
+    @keyframes imagechange1 {
+        0% {
+            background-image: url("images/mobile/ours.jpg");
+        }
+        30% {
+            background-image: url("images/mobile/abeilles.jpg");
+        }
+        60% {
+            background-image: url("images/mobile/ours.jpg");
+        }
+        100% {
+            background-image: url("images/mobile/abeilles.jpg");
+        }
     }
-    100% {
-        background-image: url("images/mobile/dechets3.jpg");
+    
+    @-webkit-keyframes imagechange1 {
+        0% {
+            background-image: url("images/mobile/ours.jpg");
+        }
+        30% {
+            background-image: url("images/mobile/abeilles.jpg");
+        }
+        60% {
+            background-image: url("images/mobile/ours.jpg");
+        }
+        100% {
+            background-image: url("images/mobile/abeilles.jpg");
+        }
     }
-}
-        
-
- .imageCult3 {
+    
+    .imageEco2 {
         width: 100%;
         height: 20rem;
         border-radius: 5%;
         background-repeat: no-repeat;
         object-fit: scale-down;
-        animation-name: imagechange3;
+        animation-name: imagechange2;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-        -webkit-animation-name: imagechange3;
+        -webkit-animation-name: imagechange2;
         -webkit-animation-duration: 10s;
- }
-
-
-@keyframes imagechange3 {
-    0% {
-        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
     }
-    30% {
-        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
+    
+    @keyframes imagechange2 {
+        0% {
+            background-image: url("images/mobile/dechets2.jpg");
+        }
+        30% {
+            background-image: url("images/mobile/dechets3.jpg");
+        }
+        60% {
+            background-image: url("images/mobile/dechets2.jpg");
+        }
+        100% {
+            background-image: url("images/mobile/dechets3.jpg");
+        }
     }
-    60% {
-        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
+    
+    @-webkit-keyframes imagechange2 {
+        0% {
+            background-image: url("images/mobile/dechets2.jpg");
+        }
+        30% {
+            background-image: url("images/mobile/dechets3.jpg");
+        }
+        60% {
+            background-image: url("images/mobile/dechets2.jpg");
+        }
+        100% {
+            background-image: url("images/mobile/dechets3.jpg");
+        }
     }
-    100% {
-        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
-    }
-}
-
-@-webkit-keyframes imagechange3 {
-    0% {
-        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
-    }
-    30% {
-        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
-    }
-    60% {
-        background-image: url("images/mobile/pexels-krivec-ales-552770.jpg");
-    }
-    100% {
-        background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
-    }
-}
-.icone {
-    background: linear-gradient(var(--fourthcolor), var(--fithcolor));linear-gradient(var(--fourthcolor), var(--fithcolor));;
-     width: 2rem;
-    font-size: 1.1rem;
-    line-height: 2;
-    border-radius: 10px;
-    border: none;
+    
+    .icone {
+        background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+        width: 2rem;
+        font-size: 1.1rem;
+        line-height: 2;
+        border-radius: 10px;
+        border: none;
         box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        box-shadow: 1px 1px 1px black,
-        inset 2px 3px 5px rgba(0,0,0,0.3),
-        inset -2px -3px 5px rgba(255,255,255,0.5);
-
-}
-
-
-.icone:focus, button:hover {
-    background-image: linear-gradient(to bottom right, #888, #eee);
-  }
-  
-  .icone:active {
-    box-shadow: inset 2px 2px 1px black,
-                inset 2px 3px 5px rgba(0,0,0,0.3),
-                inset -2px -3px 5px rgba(255,255,255,0.5);
+        box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
+    }
+    
+    .icone:focus,
+    button:hover {
+        background-image: linear-gradient(to bottom right, #888, #eee);
+    }
+    
+    .icone:active {
+        box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)
+    }
+    
+    ;
