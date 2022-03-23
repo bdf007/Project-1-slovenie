@@ -11,6 +11,15 @@
     --fourthcolor: #342628;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .titreDePage::first-letter {
     color: red;
     font-size: 2em;
@@ -20,7 +29,12 @@
     background: #788402;
 }
 
+header {
+    display: block;
+}
+
 header img {
+    display: block;
     height: 10rem;
 }
 
