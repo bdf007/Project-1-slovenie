@@ -1,3 +1,8 @@
+
+
+
+
+
 * {
    
     box-sizing: border-box;
@@ -7,7 +12,7 @@
 
 }
 html { 
-    background: url(./images/Bled.jpg) no-repeat center center fixed; 
+    background: url(./images/Bled.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,9 +28,8 @@ body div{display: flex;
     justify-content: space-evenly;
     text-align: center;
     margin-top: 7rem;
-   
-    
     }
+  
 
 
 .icone { width: 15%;
@@ -37,6 +41,7 @@ body div{display: flex;
         box-shadow: 1px 1px 1px black,
         inset 2px 3px 5px rgba(0,0,0,0.3),
         inset -2px -3px 5px rgba(255,255,255,0.5);
+        
 
 }
 
@@ -51,11 +56,49 @@ body div{display: flex;
                 inset -2px -3px 5px rgba(255,255,255,0.5);
   }
 
+
+  
 #pc { 
         color: #FEAA00;
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
 
 }
 #pc::first-letter{
         color:#788402;
+}
+
+
+
+@media screen and (min-width: 600px) { 
+  
+  * {
+   
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+
+
+}
+html { 
+    background-size: url(./images/Bled.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+  
+  
+  
+  
+  body div{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 7rem;
+  
+  }
+  .icone{
+    width: 50%;
+  }
 }

@@ -26,6 +26,7 @@ body{
    box-sizing: border-box;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     padding: 0;
     margin: 0 auto;
    width: 100%;
@@ -39,29 +40,30 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: relative;
     justify-content: flex-start;
     width: 100%;
-    height: 19rem;
+    height: 230px;
    
 }
   
 .banniere {
     background-size:cover;
-   height : 60%;
+   height : 11rem;
     width: 100%;
 }
 
-nav { background-color: linear-gradient(var(--fourthcolor), var(--fithcolor));
-        height: 3rem;
+nav { background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+        height: 4rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin-left: 1em;
+       padding-left: 2em;
+    
 }
 
-
+nav a { background:linear-gradient(var(--fourthcolor), var(--fithcolor));  }
 
 
 /*header img {
@@ -71,17 +73,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px;
-    margin-bottom: 30px;
+    
 
 }
 
 
 main p {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
     text-align: center;
     border-left: 2px solid var(--secondcolor);
+    line-height: 1.5em;
 }
 
 main p::first-letter {
@@ -96,10 +99,10 @@ main p::first-letter {
     color: var(--thirdcolor);
     font-weight: bolder;
     border-left: 2px solid var(--secondcolor);
-    margin-left: 2em;
+    margin-left: 0em;
+    height: 7em;
+    width: 9em;
     
-    /*margin-left: 62px;
-    width: 273px;*/
 }
 
 .titreDePage::first-letter {
@@ -107,10 +110,16 @@ main p::first-letter {
     color:var(--secondcolor);
 }
 
+h3{
+    background:linear-gradient(var(--fourthcolor), var(--fithcolor));
+    color: linear-gradient(antiquewhite, wheat);
+}
+
 
 footer {
     justify-content: center;
     text-align: center;
+    background: linear-gradient(var(--fourthcolor), var(--fithcolor));
 }
 
 .article {
@@ -125,7 +134,7 @@ footer {
 
 
 .imageCult1 {
-    width: 100%;
+    width: 97%;
     height: 20rem;
     border-radius: 5%;
     background-repeat: no-repeat;
@@ -153,7 +162,7 @@ footer {
     }
 }
 
-@-webkit-keyframes imagechange {
+@-webkit-keyframes imagechange1 {
     0%  {
         background-image: url("images/mobile/ours.jpg");
     }
@@ -261,7 +270,9 @@ footer {
         background-image: url("images/mobile/pexels-krivec-ales-580151.jpg");
     }
 }
-.icone { width: 2rem;
+.icone {
+    background: linear-gradient(var(--fourthcolor), var(--fithcolor));linear-gradient(var(--fourthcolor), var(--fithcolor));;
+     width: 2rem;
     font-size: 1.1rem;
     line-height: 2;
     border-radius: 10px;
