@@ -171,7 +171,12 @@ footer {
 .entre h1 {
     position: relative;
     top: 50vh;
-    left: 35vw;
+    left: 40vw;
+}
+
+.entre img {
+    width: 25vw;
+    height: auto;
 }
 
 
