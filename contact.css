@@ -265,3 +265,51 @@ footer p {
     color: var(--thirdcolor);
     width: 100%;
 }
+
+
+/************************RESPONSIVE DESKTOP *****************************/
+
+@media only screen and (min-width: 1200px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        background-color: var(--firstcolor);
+        margin-top: 320px;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 550px;
+        /* background-image: url("image-histo/eau.jpg"); */
+    }
+
+
+
+    .buton {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 50%;
+    }
+    
+    .bouton {
+        
+        text-align:left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        background-color: #342628;
+        color: #FEAA00;
+        cursor: pointer;
+    }
+    
+    .buton a img {
+        border-radius: 10px;
+        background-color: #342628;
+        padding: 7px;
+        padding-bottom: 8px;
+        margin-left: 20px;
+    }
+}

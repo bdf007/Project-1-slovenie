@@ -49,7 +49,7 @@
                 </div>
                 <div class="formulaire">
                     <label for="lastname">Prénom: </label><br>
-                    <input class="longueur" type="text" name="name" id="name" placeholder="John..." required>
+                    <input class="longueur" type="text" name="name" id="lastname" placeholder="John..." required>
                 </div>
                 <div class="formulaire">
                     <label for="email">Email: </label><br>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="formulaire">
                     <label for="objet">Objet:</label><br>
-                    <select class="longueur" name="Objet">
+                    <select class="longueur" id="objet" name="objet">
                         <option value="renseignement">demande de renseignement</option>
                         <option value="contact">demande de contact</option>
                         <option value="confidentiel">confidentiel</option>    
@@ -66,14 +66,15 @@
                 </div>
                 <div class="formulaire">
                     <label for="message">Message:</label><br>
-                    <textarea name="commentaires" placeholder="Ici votre texte à saisir" class="longueur"></textarea>
+                    <textarea name="commentaires" placeholder="Ici votre texte à saisir" id="message" class="longueur"></textarea>
                 </div>
+            </form>
         </fieldset>
         <div class="buton">
             <input type="submit" class="bouton" value="Envoyer">
             <a href="entre.html"><img src="image-histo/icone/accueil1.png" alt="home" width="24" height="24" class="icone"></a>
         </div>
-        </form>
+        
 
     </main>
 
