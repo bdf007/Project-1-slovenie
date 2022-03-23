@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -42,14 +42,14 @@
         <!-- <h1>Formulaire de contact</h1> -->
         <fieldset>
             <legend>Formulaire de <span>C</span>ontact</legend>
-            <form action="" method="get" class="formulaires">
+            <form method="get" class="formulaires">
                 <div class="formulaire">
                     <label for="name">Nom: </label><br>
                     <input class="longueur" type="text" name="name" placeholder="Doe..." id="name" required>
                 </div>
                 <div class="formulaire">
                     <label for="lastname">Prénom: </label><br>
-                    <input class="longueur" type="text" name="name" id="name" placeholder="John..." required>
+                    <input class="longueur" type="text" name="name" id="lastname" placeholder="John..." required>
                 </div>
                 <div class="formulaire">
                     <label for="email">Email: </label><br>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="formulaire">
                     <label for="objet">Objet:</label><br>
-                    <select class="longueur" name="Objet">
+                    <select class="longueur" name="objet" id="objet">
                         <option value="renseignement">demande de renseignement</option>
                         <option value="contact">demande de contact</option>
                         <option value="confidentiel">confidentiel</option>    
@@ -66,15 +66,16 @@
                 </div>
                 <div class="formulaire">
                     <label for="message">Message:</label><br>
-                    <textarea name="commentaires" placeholder="Ici votre texte à saisir" class="longueur"></textarea>
+                    <textarea name="commentaires" placeholder="Ici votre texte à saisir" class="longueur" id="message"></textarea>
                 </div>
+
+
+            </form>
         </fieldset>
         <div class="buton">
             <input type="submit" class="bouton" value="Envoyer">
             <a href="entre.html"><img src="image-histo/icone/accueil1.png" alt="home" width="24" height="24" class="icone"></a>
         </div>
-        </form>
-
     </main>
 
     <footer>
@@ -82,7 +83,7 @@
         <p>Christophe, Vincent, Jérôme</p>
     </footer>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
