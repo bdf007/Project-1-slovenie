@@ -138,6 +138,24 @@ button:hover {
 }
 
 
+/* bouton entree du site*/
+
+.entre h1 {
+    position: relative;
+    top: 40vh;
+    left: 5vw;
+}
+
+.entre img {
+    width: 50vw;
+    height: auto;
+}
+
+.entre img:hover {
+    transform: scale(2);
+}
+
+
 /*************************************   PRINCIPAL     *********************/
 
 main {
