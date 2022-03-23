@@ -11,7 +11,7 @@
 /*<a href="https://www.flaticon.com/fr/icones-gratuites/evolution" title="évolution icônes">Évolution icônes créées par Freepik - Flaticon</a>*/
 
 
-/********** VARIABLE RACINE ***************/
+/****************************     VARIABLE RACINE    ***************/
 :root {
     --firstcolor: #F7F4EF;
     --secondcolor:#788402;
@@ -25,7 +25,7 @@
     
 }
 
-/********* RESET *************/
+/**********************************    RESET     *************/
 body{
     box-sizing: border-box;
     display:flex;
@@ -48,7 +48,7 @@ li a {
 
 
 
-/******* NAVIGATION ******************/
+/**************************************    NAVIGATION    ******************/
 
 header {
     display: flex;
@@ -79,13 +79,35 @@ nav ul {
 nav ul li {
     margin-right: 20px;
     font-size: 3em;
+}
+
+/*ajout animation icones - récupérer à Vincent le 23/03/2022*/
+
+.icone { width: 2em;
+    height: 2em;
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        box-shadow: 1px 1px 1px black,
+        inset 2px 3px 5px rgba(0,0,0,0.3),
+        inset -2px -3px 5px rgba(255,255,255,0.5);
 
 }
 
 
+.icone:focus, button:hover {
+    background-image: linear-gradient(to bottom right, #888, #eee);
+  }
+  
+  .icone:active {
+    box-shadow: inset 2px 2px 1px black,
+                inset 2px 3px 5px rgba(0,0,0,0.3),
+                inset -2px -3px 5px rgba(255,255,255,0.5);
+  }
 
-
-/**********PRINCIPAL*********************/
+/*************************************   PRINCIPAL     *********************/
 
 main {
     display: flex;
@@ -188,7 +210,7 @@ main p::first-letter {
 /****************fin code Chrisophe********************************/
 
 
-
+/****************************  FOOTER ******************************/
 
 footer{
     display: flex;
