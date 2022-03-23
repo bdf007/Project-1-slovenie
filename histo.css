@@ -77,17 +77,17 @@ header {
     position: fixed;
     justify-content: flex-start;
     width: 100%;
-    height: 300px;
+    /* height: 500em; */
 }
 
 .banniere {
     background-size: cover;
-    height: 200px;
+    height: 10em;
 }
 
 nav {
     background: linear-gradient(var(--fourthcolor), var(--fithcolor));
-    height: 100px;
+    /* height: 6.5em; */
 }
 
 nav ul {
@@ -109,7 +109,7 @@ nav ul li {
     height: 2em;
     font-size: 1.1rem;
     line-height: 2;
-    border-radius: 10px;
+    border-radius: 0.5em;
     border: none;
     box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
@@ -144,8 +144,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px;
-    margin-bottom: 30px;
+    margin-top: 15em;
+    margin-bottom: 2em;
 }
 
 h1 {
@@ -198,18 +198,19 @@ main p::first-letter {
 .imageHisto1 {
     width: 100%;
     height: 20rem;
-    /* border-radius: 5%; */
+    border-radius: 5%;
     background-repeat: no-repeat;
+    background-size: auto;
     object-fit: scale-down;
-    animation-name: imagechange;
-    animation-duration: 15s;
+    animation-name: imagechangehisto1;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange;
-    -webkit-animation-duration: 15s;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.445);
+    -webkit-animation-name: imagechangehisto1;
+    -webkit-animation-duration: 10s;
 }
 
-@keyframes imagechange {
+@keyframes imagechangehisto1 {
     0% {
         background-image: url("/image-histo/ljubljana-g747cbd2cb_640.jpg");
     }
@@ -224,7 +225,7 @@ main p::first-letter {
     }
 }
 
-@-webkit-keyframes imagechange {
+@-webkit-keyframes imagechangehisto1 {
     0% {
         background-image: url("/image-histo/ljubljana-g747cbd2cb_640.jpg");
     }
@@ -244,11 +245,12 @@ main p::first-letter {
     height: 20rem;
     border-radius: 5%;
     background-repeat: no-repeat;
+    background-size: auto;
     object-fit: scale-down;
     animation-name: imagechangecult1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.445);
     -webkit-animation-name: imagechangecult1;
     -webkit-animation-duration: 10s;
 }
@@ -329,20 +331,21 @@ main p::first-letter {
 }
 
 .imageEco1 {
-    width: 97%;
+    width: 100%;
     height: 20rem;
     border-radius: 5%;
     background-repeat: no-repeat;
+    background-size: auto;
     object-fit: scale-down;
-    animation-name: imagechange1;
-    animation-duration: 15s;
+    animation-name: imagechangeEco1;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange1;
-    -webkit-animation-duration: 15s;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.445);
+    -webkit-animation-name: imagechangeEco1;
+    -webkit-animation-duration: 10s;
 }
 
-@keyframes imagechange1 {
+@keyframes imagechangeEco1 {
     0% {
         background-image: url("images/mobile/ours.jpg");
     }
@@ -357,7 +360,7 @@ main p::first-letter {
     }
 }
 
-@-webkit-keyframes imagechange1 {
+@-webkit-keyframes imagechangeEco1 {
     0% {
         background-image: url("images/mobile/ours.jpg");
     }
@@ -377,16 +380,17 @@ main p::first-letter {
     height: 20rem;
     border-radius: 5%;
     background-repeat: no-repeat;
+    background-size: auto;
     object-fit: scale-down;
-    animation-name: imagechange2;
+    animation-name: imagechangeEco2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    -webkit-animation-name: imagechange2;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.445);
+    -webkit-animation-name: imagechangeEco2;
     -webkit-animation-duration: 10s;
 }
 
-@keyframes imagechange2 {
+@keyframes imagechangeEco2 {
     0% {
         background-image: url("images/mobile/dechets2.jpg");
     }
@@ -401,7 +405,7 @@ main p::first-letter {
     }
 }
 
-@-webkit-keyframes imagechange2 {
+@-webkit-keyframes imagechangeEco2 {
     0% {
         background-image: url("images/mobile/dechets2.jpg");
     }
@@ -425,7 +429,7 @@ main p::first-letter {
 footer {
     display: flex;
     width: 100%;
-    height: 80px;
+    height: 5em;
     background: linear-gradient(var(--fithcolor), var(--fourthcolor));
 }
 
