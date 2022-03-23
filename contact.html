@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact formulaire</title>
+    <link rel="stylesheet" href="contact.css" type="text/css"/>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> -->
+</head>
+
+<body>   <!--class="body_contact"-->
+    <header id="header">
+        <img src="image-histo/nature1.jpg" alt="paysage" class="banniere">
+        
+        <nav>
+            <ul>
+                <li><a href="#home"><img src="image-histo/icone/accueil1.png" alt="home" width="24" height="24" class="icone"></a></li>
+                <li><a href="history.html"><img src="image-histo/icone/histoire.png" alt="retour-menu" width="24" height="24" class="icone"></a></li>
+                <li><a href="#back"><img src="image-histo/icone/ecologie2.png" alt="retour-menu" width="24" height="24" class="icone"></a></li>
+                <li><a href="#back"><img src="image-histo/icone/culture.png" alt="retour-menu" width="24" height="24" class="icone"></a></li>
+                <li><a href="#back"><img src="image-histo/icone/retour1.png" alt="retour-menu" width="24" height="24" class="icone"></a></li>
+                <li><a href="#contact"><img src="image-histo/icone/formulaire-de-contact.png" alt="formulaireContact" width="24" height="24" class="icone"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <main>
+        <!-- <h1>Formulaire de contact</h1> -->
+        <fieldset>
+            <legend>Formulaire de <span>C</span>ontact</legend>
+            <form action="" method="get" class="formulaires">
+                <div class="formulaire">
+                    <label for="name">Nom: </label><br>
+                    <input class="longueur" type="text" name="name" placeholder="Doe..." id="name" required>
+                </div>
+                <div class="formulaire">
+                    <label for="lastname">Prénom: </label><br>
+                    <input class="longueur" type="text" name="name" id="name" placeholder="John..." required>
+                </div>
+                <div class="formulaire">
+                    <label for="email">Email: </label><br>
+                    <input class="longueur" type="email" name="email" placeholder="jx.rodo@gjo.com " id="email" required>
+                </div>
+                <div class="formulaire">
+                    <label for="objet">Objet:</label><br>
+                    <select class="longueur" name="Objet">
+                        <option value="renseignement">demande de renseignement</option>
+                        <option value="contact">demande de contact</option>
+                        <option value="confidentiel">confidentiel</option>    
+                        <option value="autre sujet">autre sujet</option>    
+                    </select>
+                </div>
+                <div class="formulaire">
+                    <label for="message">Message:</label><br>
+                    <textarea name="commentaires" placeholder="Ici votre texte à saisir" class="longueur"></textarea>
+                </div>
+        </fieldset>
+                <div class="buton">
+                    <input type="submit" class="bouton" value="Envoyer">
+                    <a href="#home"><img src="image-histo/icone/accueil1.png" alt="home" width="24" height="24" class="icone"></a>
+                </div>
+            </form>
+        
+    </main>
+
+    <footer>
+            <img src="image-histo/icone/teamwork1.png" alt="equipe" class="imgteam">
+            <p>Christophe, Vincent, Jérôme</p>
+    </footer>
+
+    <script type ="text/javascript" src="script.js"></script>
+</body>
+
+</html>

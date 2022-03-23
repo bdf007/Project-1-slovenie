@@ -1,0 +1,281 @@
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/email" title="email icônes">Email icônes créées par Bartama Graphic - Flaticon</a>*/
+
+/********** VARIABLE RACINE ***************/
+:root {
+    --firstcolor: #F7F4EF;
+    --secondcolor:#788402;
+    --thirdcolor:#FEAA00;
+    --fourthcolor:#342628;
+    --fithcolor:#2D4B2B;
+  }
+
+  html{
+    scroll-behavior: smooth;
+    
+}
+
+/********* RESET *************/
+body{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #F7F4EF;
+    /*width: 1100px; */
+}
+
+li{
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+
+/******* NAVIGATION ******************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+}
+
+
+.banniere {
+    background-size:cover;
+    height: 200px;
+}
+
+
+nav {
+     background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    height: 100px;
+}
+
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    /* margin: 10px */
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 3em;
+
+}
+
+/*ajout animation icones - récupérer à Vincent le 23/03/2022*/
+
+.icone { width: 2em;
+    height: 2em;
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        box-shadow: 1px 1px 1px black,
+        inset 2px 3px 5px rgba(0,0,0,0.3),
+        inset -2px -3px 5px rgba(255,255,255,0.5);
+
+}
+
+
+.icone:focus, button:hover {
+    background-image: linear-gradient(to bottom right, #888, #eee);
+  }
+  
+  .icone:active {
+    box-shadow: inset 2px 2px 1px black,
+                inset 2px 3px 5px rgba(0,0,0,0.3),
+                inset -2px -3px 5px rgba(255,255,255,0.5);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************FORMULAIRE DE CONTACT*************************/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color:var(--firstcolor);
+    margin-top: 320px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 550px;
+    /* background-image: url("image-histo/eau.jpg"); */
+}
+
+
+
+main .formulaire {
+    display: inline-block;
+    /* justify-content:center; */
+    text-align:justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 30px;;
+    width: 100%;
+}
+
+/*fieldset*/
+
+fieldset {
+    border-radius: 3px;
+    border-top: 2px solid var(--thirdcolor);
+    border-left:2px solid var(--thirdcolor);
+    border-bottom: 2px solid var(--secondcolor);
+    border-right: 1px solid var(--fithcolor);
+    
+}
+
+/*Legend*/
+legend {
+    font-weight: bold;
+    font-size: 1.7em;
+    color:var(--fithcolor);
+}
+
+legend::first-letter {
+    color:var(--thirdcolor);
+}
+
+legend:nth-child(2) {
+    color:var(--thirdcolor);
+}
+
+legend span {
+    text-transform: capitalize;
+    color: var(--thirdcolor);
+}
+
+/*Labels*/
+
+label {
+    color:var(--thirdcolor);
+    
+}
+
+/*input*/
+input {
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    width: 75%;
+}
+
+input[type=text]:focus {
+    background-color:var(--thirdcolor);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=email]:focus {
+    background-color:var(--thirdcolor);
+    transition: 0.5s;
+    
+}  
+
+
+/*objet*/
+.longueur {
+    width: 75%;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+}
+
+.longueur:focus {
+    background-color:var(--thirdcolor);
+    transition: 0.5s;
+}
+
+
+/*textaera*/
+textarea {
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    width: 80%;
+}
+
+textarea:focus {
+    background-color:var(--thirdcolor);
+    transition: 0.5s;
+} 
+
+
+/*button*/
+.buton {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.bouton {
+    /* margin-left: 50%; */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color:#342628;
+    color:#FEAA00;
+    cursor: pointer;
+}
+
+.buton a img {
+    border-radius: 10px;
+    background-color:#342628;
+    padding: 7px;
+    padding-bottom: 8px;
+    margin-left: 20px
+}
+
+
+
+
+/*************************FOOTER*****************/
+footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(var(--fithcolor), var(--fourthcolor));
+}
+
+.imgteam {
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+
+}
+
+footer p {
+    font-size: 1em;
+    margin: auto 0;
+    margin-left: 10px;
+    color: var(--thirdcolor);
+    width: 100%;
+}

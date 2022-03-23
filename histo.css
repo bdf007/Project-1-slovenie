@@ -1,0 +1,235 @@
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/bouton-daccueil" title="bouton d'accueil icônes">Bouton d'accueil icônes créées par Freepik - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/bouton-retour" title="bouton retour icônes">Bouton retour icônes créées par Catalin Fertu - Flaticon</a>*/
+/*Photo de ArtHouse Studio provenant de Pexels*/
+/*<a href="https://www.flaticon.com/free-icons/sport-team" title="sport team icons">Sport team icons created by Smashicons - Flaticon</a>*/
+/*Smashicons - team icone */
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/forme" title="forme icônes">Forme icônes créées par Freepik - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/feuille" title="feuille icônes">Feuille icônes créées par smashingstocks - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/durabilite" title="durabilité icônes">Durabilité icônes créées par BomSymbols - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/faire-defiler" title="faire défiler icônes">Faire défiler icônes créées par Freepik - Flaticon</a>*/
+/*<a href="https://www.flaticon.com/fr/icones-gratuites/evolution" title="évolution icônes">Évolution icônes créées par Freepik - Flaticon</a>*/
+
+
+/****************************     VARIABLE RACINE    ***************/
+:root {
+    --firstcolor: #F7F4EF;
+    --secondcolor:#788402;
+    --thirdcolor:#FEAA00;
+    --fourthcolor:#342628;
+    --fithcolor:#2D4B2B;
+  }
+
+  html{
+    scroll-behavior: smooth;
+    
+}
+
+/**********************************    RESET     *************/
+body{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background: #F7F4EF;
+    /*width: 1100px; */
+}
+
+li{
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+
+/**************************************    NAVIGATION    ******************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    width: 100%;
+    height: 300px;
+}
+
+.banniere {
+    background-size:cover;
+    height: 200px;
+}
+
+nav {
+     background: linear-gradient(var(--fourthcolor), var(--fithcolor));
+    height: 100px;
+}
+
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    /* margin: 10px */
+}
+
+nav ul li {
+    margin-right: 20px;
+    font-size: 3em;
+}
+
+/*ajout animation icones - récupérer à Vincent le 23/03/2022*/
+
+.icone { width: 2em;
+    height: 2em;
+    font-size: 1.1rem;
+    line-height: 2;
+    border-radius: 10px;
+    border: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 10px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        box-shadow: 1px 1px 1px black,
+        inset 2px 3px 5px rgba(0,0,0,0.3),
+        inset -2px -3px 5px rgba(255,255,255,0.5);
+
+}
+
+
+.icone:focus, button:hover {
+    background-image: linear-gradient(to bottom right, #888, #eee);
+  }
+  
+  .icone:active {
+    box-shadow: inset 2px 2px 1px black,
+                inset 2px 3px 5px rgba(0,0,0,0.3),
+                inset -2px -3px 5px rgba(255,255,255,0.5);
+  }
+
+/*************************************   PRINCIPAL     *********************/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--thirdcolor);
+    font-weight: bolder;
+    border-left: 2px solid var(--secondcolor);
+    margin: 2em;
+}
+
+h1::first-letter{
+    font-size: 2em;
+    color:var(--secondcolor);
+}
+
+.premiertrait {
+    background-color: var(--thirdcolor);
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    text-shadow: 1px 1px 2px var(--thirdcolor);  
+}
+
+main p {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+    border-left: 2px solid var(--secondcolor);
+}
+
+main p::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+    color:var(--secondcolor) ;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 75%;
+    margin-right: 1.5em;
+    margin-right: 1.5em;
+}
+
+
+/************************ ajout code Christophe date: 16/03/2022**************************/
+.imageHisto1 {
+    width: 100%;
+    height: 20rem;
+    /* border-radius: 5%; */
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    animation-name: imagechange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-animation-name: imagechange;
+    -webkit-animation-duration: 15s;
+}
+
+@keyframes imagechange {
+    0% {
+        background-image: url("/image-histo/ljubljana-g747cbd2cb_640.jpg");
+    }
+    30% {
+        background-image: url("/image-histo/architecture-g44d619e7d_640.jpg");
+    }
+    60% {
+        background-image: url("/image-histo/piran-g3718ad2f4_640.jpg");
+    }
+    100% {
+        background-image: url("/image-histo/slovenia-g1cd53262a_640.jpg");
+    }
+}
+
+@-webkit-keyframes imagechange {
+    0% {
+        background-image: url("/image-histo/ljubljana-g747cbd2cb_640.jpg");
+    }
+    30% {
+        background-image: url("/image-histo/architecture-g44d619e7d_640.jpg");
+    }
+    60% {
+        background-image: url("/image-histo/piran-g3718ad2f4_640.jpg");
+    }
+    100% {
+        background-image: url("/image-histo/slovenia-g1cd53262a_640.jpg");
+    }
+}
+
+/****************fin code Chrisophe********************************/
+
+
+/****************************  FOOTER ******************************/
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(var(--fithcolor), var(--fourthcolor));
+}
+
+.imgteam {
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+
+}
+
+footer p {
+    font-size: 1em;
+    margin: auto 0;
+    margin-left: 10px;
+    color: var(--thirdcolor);
+}
