@@ -39,16 +39,16 @@ button:hover {
     box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5);
 }
 
-#pc {
+.pc {
     color: #FEAA00;
     margin-bottom: 8rem;
 }
 
-#pc::first-letter {
+.pc::first-letter {
     color: #788402;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -65,10 +65,18 @@ button:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        text-align: center;
-        margin-top: 7rem;
+        margin-top: 40%;
     }
     .icone {
         width: 50%;
+        margin-left: 3em;
+       
     }
-}
+
+    .pc{ margin-bottom:0;
+        margin-top: 2%;
+        padding-right: 5%;
+          
+    }
+
+    
